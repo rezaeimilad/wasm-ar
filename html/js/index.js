@@ -109,7 +109,7 @@ function onInit(source) {
             case "result": {
                 const result = msg.result;
                 arElem.style.display = "block";
-                arElem.play();
+                //arElem.play();
                 transformElem(result.H, arElem);
                 drawCorners(result.corners);
                 process();
@@ -118,7 +118,7 @@ function onInit(source) {
             case "not found": {
                 clearOverlayCtx();
                 arElem.style.display = "none";
-                arElem.pause();
+                //arElem.pause();
                 process();
             }
             default: {
